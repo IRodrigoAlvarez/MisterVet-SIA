@@ -1,14 +1,29 @@
 :root {
-  --primary: #0b254b;
-  --light: #ffffff;
-  --light-blue: #F5F6FA;
-  --grey: #eff2f7;
+  --primary: #ffffff;
+  --light: #292727;
+  --light-blue: #212122;
+  --grey: #212122;
 }
 
 body {
   overflow: hidden;
+  background: #212122;
   font-family: 'Muli', sans-serif;
 }
+
+
+.boton_menu{
+  position: relative;
+  display:inline-block;
+  width: 200px;
+  height: 24px;
+  margin:0px;
+  text-align: left;
+  bottom:6px;
+  border-radius: ;
+
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary);
@@ -95,6 +110,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--grey);
   color: var(--primary);
 }
+
+
 
 #content {
   overflow-y: auto;

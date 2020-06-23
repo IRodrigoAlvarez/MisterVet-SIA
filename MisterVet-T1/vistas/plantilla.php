@@ -29,21 +29,38 @@
 
 
     <!-- Sidebar -->
-    <div id="sidebar-container" class="bg-light border-right">
+    <div id="sidebar-container" class="bg-light">
       <div class="logo">
         <h2 class="font-weight-bold mb-0" style="text-align: center;">Mister Vet</h2>
       </div>
       <div class="menu list-group-flush">
+
         <a href="index.php?pagina=inicio" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-          <i class="material-icons"> account_circle </i> Nosotros </a>
+          <i class="material-icons"> account_circle </i> 
+          <p class="boton_menu">Nosotros </p>
+        </a>
+
+        
         <a href="index.php?pagina=ingresoventa" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-          <i class="material-icons">add_circle</i>  Ingresar Venta </a>
-        <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-          <i class="material-icons">adjust</i>  Inventario </a>
-        <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-          <i class="material-icons">blur_circular</i>  Historial Ventas </a>
-        <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-          <i class="material-icons">border_style</i>  </a>
+          <i class="material-icons">local_atm</i>  
+          <p class="boton_menu">Ingresar Venta</p>  
+        </a>
+        <a href="index.php?pagina=producto" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+          <i class="material-icons">shopping_cart</i>   
+          <p class="boton_menu">Productos</p>
+        </a>
+        <a href="index.php?pagina=proveedores" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+          <i class="material-icons">store</i>   
+          <p class="boton_menu">Proveedores</p>
+        </a>
+        <a href="index.php?pagina=clientes" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+          <i class="material-icons">mood</i>  
+          <p class="boton_menu">Clientes</p>
+        </a>
+        <a href="index.php?pagina=mascotas" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+          <i class="material-icons">pets</i>  
+          <p class="boton_menu">Mascotas</p>
+        </a>
 
 
       </div>
@@ -52,7 +69,8 @@
 
 		<?php 
 			if(isset($_GET['pagina'])){
-				if( $_GET['pagina'] == "inicio" || $_GET['pagina'] == "ingresoventas"){
+        if( $_GET['pagina'] == "inicio" || $_GET['pagina'] == "ingresoventa" || $_GET['pagina'] == "producto"
+        || $_GET['pagina'] == "proveedores"|| $_GET['pagina'] == "clientes"|| $_GET['pagina'] == "mascotas"){
 					include "vistas/".$_GET['pagina'].".php";
 				}else{
 					include "vistas/inicio.php";

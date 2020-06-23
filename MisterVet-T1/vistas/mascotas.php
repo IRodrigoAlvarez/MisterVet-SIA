@@ -1,7 +1,7 @@
 
 <body>
 
-<h1>Ingreso Venta</h1>
+<h1>Mascotas</h1>
 
 
 <!-- Bootstrap y JQuery -->
